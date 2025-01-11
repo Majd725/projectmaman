@@ -1,4 +1,5 @@
 @import url('variables.css');
+@import url('fonts/clash-display/clash-display.css');
 
 .maindiv{
     display: flex;
