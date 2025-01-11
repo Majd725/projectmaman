@@ -1,71 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-    <style>
-        body {
-            margin: 0;s
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #ff7e5f, #feb47b);
-            color: #fff;
-            overflow: hidden;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin: 0;
-            font-weight: 600;
-        }
-        p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-        .icon {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            animation: bounce 2s infinite;
-        }
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-        .cursor {
-            position: absolute;
-            width: 15px;
-            height: 15px;
-            background: #fff;
-            border-radius: 50%;
-            pointer-events: none;
-            transform: translate(-50%, -50%);
-            transition: transform 0.1s ease;
-        }
-    </style>
-</head>
-<body>
-    <div class="cursor" id="cursor"></div>
-    <div class="container">
-        <div class="icon">🚧</div>
-        <h1>Under Construction</h1>
-        <p>We'll be back soon with something amazing.</p>
-    </div>
-    <script>
-        // Cursor Tracking
-        const cursor = document.getElementById('cursor');
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-        });
-    </script>
-</body>
+<html>
+    <head>
+        <link rel="stylesheet" href="indexstyles.css">
+        <title>Project Ma'man</title>
+    </head>
+
+    <body style="margin: 0;">
+        <div class="maindiv"> 
+            <div class="header">
+                <a href="index.html">
+                    <img class="logo"src="Photos/Logo.png" />
+                   </a>
+                <a class="logo_name" href="index.html">
+                    Project Ma'man
+                </a>
+                <nav>
+                    <ul>
+                        <li> <a class="arabic "href="smt">العربية</a></li>
+                        <li> <a class="supportservices" href="smt">Support Services</a></li>
+                        <li> <a class="services" href="smt">Resources</a></li>
+                        <li> <a class="aboutus" href="smt">About Us</a></li>
+                        <li> <a class="contactus" href="smt">Contact Us</a></li>
+                        <button class="help">Get Help</button>
+                    </ul>
+
+
+                </nav>
+            </div>
+            <div class="hero">
+                <p class="temple_text">EMPOWER, EDUCATE, HEAL</p>
+            </div>
+            <div class="welcome">
+                <p class="welcome_text">Welcom to project Ma'man</p>
+                <p class="welcome_paragraph">
+                    At Project Maaman, we are dedicated to empowering survivors of sexual assault in rural Alsweida, Syria. 
+                    Through safe spaces, mental health resources, anonymous reporting tools, and skill-building workshops, we aim to restore dignity, hope, and opportunity.
+                
+                </p>
+
+                <button class="learnmore">Learn More</button>
+
+            </div>
+
+            <div class="footer">
+                <div class="footer_element logo_rights">
+                    <div class="logo_social">
+
+                        <img class="logo" src="Photos/Logo.png" />
+
+                        <div class="social">
+                            <img class="social_icon linkedin" src="Photos/Social_Media/LinkedIn.svg" />
+                            <img class="social_icon instagram" src="Photos/Social_Media/Logo Instagram.svg" />
+                            <img class="social_icon youtube" src="Photos/Social_Media/Logo YouTube.svg" />
+                        </div>
+
+                    </div>
+                    <div class="rights">© 2025 Project Maaman. All rights reserve</div>
+                </div>
+                <div class="footer_element">Links</div>
+                <div class="footer_element"> Contact US</div>
+                <div class="footer_element">Help</div>
+
+            </div>
+            
+
+        </div>
+    </body>
 </html>
