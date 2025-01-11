@@ -72,6 +72,12 @@ nav ul li a {
     line-height: 100%; /* 16px */
 }
 
+.arabic {
+    direction: rtl;
+    text-align: right;
+    font-family: "ClashDisplay-Variable", system-ui, -apple-system, sans-serif;
+}
+
 .help{
     background-color: white;
     font-family: var(--sds-typography-body-font-family);
