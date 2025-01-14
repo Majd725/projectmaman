@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html  >
 <html>
     <head>
         <meta charset="UTF-8">
@@ -11,15 +11,17 @@
                 const headerHeight = header.offsetHeight;
                 document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
             }
+
+            // js
     
             // Run on load
             window.addEventListener('load', updateHeaderHeight);
             // Run on resize
             window.addEventListener('resize', updateHeaderHeight);
-        </script>
-    </head>
-    <body>
-        <div class="maindiv"> 
+            </script>
+        </head>
+        <body>
+            <div class="maindiv"> 
             <div class="header">
                 <a href="index.html">
                     <img class="logo"src="Photos/Logo1.png" />
@@ -46,14 +48,23 @@
                         <p class="art1text">Empowering Survivors,
                             Building Communities</p>
                             
-                        <div class="art1title" style="background-color: aquamarine;">
+                        <div class="art1title">
+                            <!-- Place Holder div -->
+                            <div style="flex: 1;">
+
+                             </div> 
                             <div class="art1title1">
-                            <img class="art1flower white_flower" src="Photos/About Us/svgs/white Flower.svg" />
-                            <img class="art1flower blue_flower" src="Photos/About Us/svgs/Blue flower.svg" />
-                            </div>
-                            <div class="art1title2">
-                                <img class="art1flower" src="Photos/About Us/svgs/Rose Leaves.svg" />
-                            </div>
+                                <div class="art110">
+                                    <img class="artflower white_flower" src="Photos/About Us/svgs/white Flower.svg" />
+                                    <img class="artflower blue_flower" src="Photos/About Us/svgs/Blue flower.svg" />
+                                </div>
+                                <div class="art110">
+                                    <img class="artflower rose" src="Photos/About Us/svgs/Rose Leaves.svg" />
+                                    <img class="artflower tree" src="Photos/About Us/svgs/Tree.svg" />
+                                </div>
+                                
+
+                                </div>
                         </div>
                     </div>
                     <div class="artwork2">
@@ -61,3 +72,17 @@
                             <p class="a2_1_1">Empowering Survivors</p>
                             <p class="a2_1_2">
                                 Empowerment begins with understanding,
+                                compassion, and action. At Project Ma’man, we stand with survivors, 
+                                offering the tools and opportunities to rise above and thrive.</p>
+                        </div>
+                        <div class="art2_2">
+                            <p class="a2_1_1 l2">Mental Support for All</p>
+                            <p class="a2_1_2">Everyone deserves access to mental health support. We provide compassionate care and resources to help individuals heal and grow.</p>
+                        </div>
+    
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </body>
+</html>
