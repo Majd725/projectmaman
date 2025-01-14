@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/about_styles.css">
+        <title>About us</title>
+
+        <script>
+            function updateHeaderHeight() {
+                const header = document.querySelector('.header');
+                const headerHeight = header.offsetHeight;
+                document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+            }
+    
+            // Run on load
+            window.addEventListener('load', updateHeaderHeight);
+            // Run on resize
+            window.addEventListener('resize', updateHeaderHeight);
+        </script>
+    </head>
+    <body>
+        <div class="maindiv"> 
+            <div class="header">
+                <a href="index.html">
+                    <img class="logo"src="Photos/Logo1.png" />
+                   </a>
+                <a class="logo_name" href="index.html">
+                    Project Ma'man
+                </a>
+                <nav>
+                    <ul>
+                        <li> <a class="arabic"href="smt">العربية</a></li>
+                        <li> <a class="supportservices" href="smt">Support Services</a></li>
+                        <li> <a class="services" href="smt">Resources</a></li>
+                        <li> <a class="aboutus" href="smt">About Us</a></li>
+                        <li> <a class="contactus" href="smt">Contact Us</a></li>
+                        <button class="login" href="smt">Log In</button>
+                        <button class="help">Get Help</button>
+                    </ul>
+                </nav>
+            </div>
+            <div class="artwork">
+                <span class="sun"></span>
+                <div class="artworkcopy">
+                    <div class="artwork1">
+                        <p class="art1text">Empowering Survivors,
+                            Building Communities</p>
+                            
+                        <div class="art1title" style="background-color: aquamarine;">
+                            <div class="art1title1">
+                            <img class="art1flower white_flower" src="Photos/About Us/svgs/white Flower.svg" />
+                            <img class="art1flower blue_flower" src="Photos/About Us/svgs/Blue flower.svg" />
+                            </div>
+                            <div class="art1title2">
+                                <img class="art1flower" src="Photos/About Us/svgs/Rose Leaves.svg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artwork2">
+                        <div class="art2_1">
+                            <p class="a2_1_1">Empowering Survivors</p>
+                            <p class="a2_1_2">
+                                Empowerment begins with understanding,

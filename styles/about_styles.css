@@ -1,0 +1,258 @@
+:root {
+    --header-height: 0px;
+}
+
+
+body{
+    padding: 0;
+    padding-top: var(--header-height);
+    background-color:  #fdedd9;
+}
+
+
+.maindiv{
+    display: flex;
+    width: var(--sds-responsive-device-width);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    padding: var(--sds-size-space-800);
+    align-items: center;
+    align-content: center;
+    gap: 0px var(--sds-size-space-600);
+    align-self: stretch;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    background-color: #fdedd9;
+    border-bottom: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default);
+}
+
+.logo{
+    width: 63px;
+    height: 63px;
+    background-color: var(--sds-color-brand-primary);
+}
+
+.logo_name{
+    display: flex;
+    text-decoration: none;
+    width: 178px;
+    height: 99px;
+    flex-direction: column;
+    justify-content: center;
+    color: #016985;
+    font-family: "Clash Display Variable";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+}
+
+nav{
+    margin-left: auto; /* Push nav to the right */
+    padding-right: 60px;
+    width: auto; /* Allow natural width */
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    gap: 8px 32px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: var(--sds-typography-body-font-family);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%; /* 16px */
+}
+
+.help{
+    background-color: white;
+    font-family: var(--sds-typography-body-font-family);
+    font-size: 30px;
+    font-family: "Clash Display Variable";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    color: red;
+    background-color: #fdedd9;
+    border-color: red;
+    border-style: solid;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.help:hover{
+    background-color: red;
+    color: #fdedd9;
+    cursor: pointer;
+}
+
+.login{
+    background-color: #fdedd9;
+    font-family: var(--sds-typography-body-font-family);
+    font-style: normal;
+    font-family: "Clash Display Variable";
+    font-weight: 600;    font-size: 30px;
+    line-height: 100%; /* 16px */
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #016985;
+    border-color: #016985;
+    border-style: solid;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login:hover{
+    background-color: #016985;
+    color: #fdedd9;
+    cursor: pointer;
+}
+
+.artwork{
+    margin-top: 0px;
+    padding: 0;
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: 0px var(--sds-size-space-600);
+    align-self: stretch;
+}
+.artworkcopy{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.sun {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FF9385 0%, #FFBF85 100%);
+
+    box-shadow: 0px 5.899px 5.899px 0px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+  }
+
+.artwork1{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #fdedd9;
+    flex: 1;
+}
+
+.artwork2{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background-color: #016985;
+    flex: 1;
+}
+
+.art1text{
+    display: flex;
+    flex: 1;
+    width: 1126px;
+    height: 164px;
+    margin: 0;
+    margin-left: 80px;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Clash Display Variable";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 96px */
+}
+
+.art1title{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.art1title1{
+    flex: 1;
+    background-color: black;
+}
+
+.art1title2{
+    flex: 1;
+    background-color: rgb(167, 18, 18);
+}
+
+
+
+.art2_1{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    height: 100%;;
+
+}
+.art2_2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+.a2_1_1{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: "Clash Display Variable";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 48px */
+}
+
+.a2_1_2{
+    flex: 2;
+    height: 100%;
+    display: flex;
+    padding: 100px;
+    padding-top: 0px;
+    justify-content: center;
+    align-self: center;
+    color: #000;
+  
