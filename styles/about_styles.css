@@ -273,4 +273,23 @@ nav ul li a {
     align-self: center;
     color: #000;
     font-family: "Clash Display Variable";
-    fo
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 32px */
+}
+
+.l2{
+    padding-right: 0;
+}
+
+
+
+/* Third */
+
+.third{
+    display: flex;
+    flex-direction: row;
+    column-gap: 300px;
+}
+
