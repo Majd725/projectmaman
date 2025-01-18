@@ -1,3 +1,6 @@
+@import url('/styles/variables.css');
+
+
 :root {
     --header-height: 0px;
 }
@@ -5,7 +8,7 @@
 
 body{
     padding: 0;
-    padding-top: var(--header-height);
+    margin: 0;
     background-color:  #fdedd9;
 }
 
@@ -26,7 +29,6 @@ body{
     gap: 0px var(--sds-size-space-600);
     align-self: stretch;
     flex-wrap: wrap;
-    position: fixed;
     z-index: 1000;
     top: 0px;
     background-color: #fdedd9;
@@ -288,8 +290,200 @@ nav ul li a {
 /* Third */
 
 .third{
+    padding-left: 40px;
     display: flex;
     flex-direction: row;
     column-gap: 300px;
 }
 
+
+.fourth{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    position: relative;
+}
+
+
+.fourth_title{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 40px;
+    display: flex;
+    max-width: 1126px;
+    color: #000;
+    font-family: "Clash Display Variable";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.fourth_desc{
+    margin: 10vw;
+    margin-top: 2vw;
+    margin-bottom: 0;
+    color: #000;
+    font-family: "Clash Display Variable";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 125% */
+}
+
+.final_tree{
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.sunflower{
+    margin-top: 0;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    border-top: 0.0625rem solid #cccccc;
+    padding: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.logo_rights{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 25vw;
+    align-items: center;
+}
+
+.logo_footer{
+    flex: 1;
+}
+
+.logo2{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.socials{
+    margin-bottom: 10px;
+}
+
+.social{
+    width: 30px;
+    height: 30px;
+}
+
+.rights{
+    margin-top: 0;
+    flex: 1;
+    color: #000;
+    text-align: center;
+    font-family: "Clash Display Variable";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    max-width: 300px;
+    line-height: 100%; /* 24px */
+}
+
+.links{
+    display: flex;
+    flex: 1;
+    width: 262px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.links_title{
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    font-family: var(--sds-typography-body-font-family);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: var(--sds-typography-body-font-weight-strong);
+    line-height: 140%; /* 22.4px */
+}
+
+.link{
+    color: black;
+    /* Body Base */
+    font-family: var(--sds-typography-body-font-family);
+    font-size:22px;
+    font-style: normal;
+    font-weight: var(--sds-typography-body-font-weight-regular);
+    line-height: 140%; /* 22.4px */
+    text-decoration: none;
+
+}
+
+.contact_us{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact_title{
+    font-family: "Inter", serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.contact_info{
+    font-family: "Inter", serif;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.get_help{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.get_help_button{
+    background-color: white;
+    font-family: var(--sds-typography-body-font-family);
+    font-size: 80px;
+    font-family: "Clash Display Variable";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+    border-width: 2px;
+    border-radius: 30px;
+    padding: 5px;
+    color: #fdedd9;
+    background-color: red;
+    border-color: red;
+    border-style: solid;
+    position: absolute;
+    top: 25%;
+   
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.get_help_button:hover{
+    background-color: #fdedd9;
+    color: red;
+    cursor: pointer;
+}
