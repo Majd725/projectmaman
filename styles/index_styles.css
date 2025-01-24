@@ -1,0 +1,221 @@
+@import url('/styles/variables.css');
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color:  #ffffff;
+}
+
+
+.maindiv{
+    display: flex;
+    width: var(--sds-responsive-device-width);
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    padding: var(--sds-size-space-800);
+    align-items: center;
+    align-content: center;
+    gap: 0px var(--sds-size-space-600);
+    align-self: stretch;
+    flex-wrap: wrap;
+    z-index: 1000;
+    top: 0px;
+    background-color: #ffffff;
+    border-bottom: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default);
+}
+
+.logo{
+    width: 63px;
+    height: 63px;
+    background-color: var(--sds-color-brand-primary);
+}
+
+.logo_name{
+    display: flex;
+    text-decoration: none;
+    width: 178px;
+    height: 99px;
+    flex-direction: column;
+    justify-content: center;
+    color: #016985;
+    font-family: "Clash Display Variable";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+}
+
+nav{
+    margin-left: auto; /* Push nav to the right */
+    padding-right: 60px;
+    width: auto; /* Allow natural width */
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    gap: 8px 32px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: var(--sds-typography-body-font-family);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%; /* 16px */
+}
+
+.help{
+    background-color: white;
+    font-family: var(--sds-typography-body-font-family);
+    font-size: 30px;
+    font-family: "Clash Display Variable";
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    color: red;
+    background-color: white;
+    border-color: red;
+    border-style: solid;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.help:hover{
+    background-color: red;
+    color: #fdedd9;
+    cursor: pointer;
+}
+
+.login{
+    background-color: white;
+    font-family: var(--sds-typography-body-font-family);
+    font-style: normal;
+    font-family: "Clash Display Variable";
+    font-weight: 600;    font-size: 30px;
+    line-height: 100%; /* 16px */
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #016985;
+    border-color: #016985;
+    border-style: solid;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login:hover{
+    background-color: #016985;
+    color: white;
+    cursor: pointer;
+}
+
+.first_background{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    background-color: white;  
+    flex: 1;
+}
+
+
+.first_mixer{
+    border-radius: 874px;
+    background: linear-gradient(180deg, rgba(0, 194, 255, 0.00) 0%, #FF29C3 100%);
+    position: absolute;
+    filter: blur(100px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40rem; /* Adjust as needed */
+    height: 40rem; /* Adjust as needed */
+}
+
+.first_rec{
+    width: 24rem;
+    height: 45rem;
+    background: linear-gradient(180deg, rgba(24, 75, 255, 0.00) 0%, #174AFF 100%);
+    filter: blur(100px);
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.first_over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; /* Make sure it's on top */
+
+    background: url("/Photos/Index/Texture.png");
+    mix-blend-mode: overlay;
+}
+
+.first_blob{
+    position: absolute;
+    top: 0%;
+    right:3%;
+    width: 34rem;
+    height: 34rem;
+}
+
+.second_blob{
+    position: absolute;
+    top: 45%;
+    left:10%;
+    width: 28rem;
+    height: 28rem;
+}
+
+
+.first_text{
+    position: absolute;
+    width: 55rem;
+    height: 35.875rem;
+    color: #3C0289;
+    font-family: "Clash Display Variable";
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    z-index: 1000;
+    left:5%
+}
+
+.inbetween_text{
+    position: absolute;
+    width: 55rem;
+    height: 35.875rem;
+    color: #3C0289;
+    font-family: "Clash Display Variable";
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    left:5%;
+    z-index: 1000;
+}
+
+.second_background{
+    width: 100%;
+    height: 100%;
+    background-color: black;  
+}
